@@ -1,0 +1,262 @@
+/* Styling Page */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #e6e6ff;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+/* Styling Navigation Section */
+nav {
+    background-color: #000019;
+    width: 100%;
+    position: relative;
+    height: 50px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 10px 5px 10px;
+    position: relative;
+    float: right;
+}
+
+nav a.active {
+    color: blue;
+    border-bottom: 2px solid blue;
+    padding-bottom: 3px;
+}
+
+nav a:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: blue;
+    transform: scaleX(0);
+    transition: transform 0.7s ease;
+}
+
+nav a:hover:before {
+    transform: scaleX(1);
+} 
+
+/* Styling Header */
+p {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000019;
+}
+
+/* Styling Table Calculator */
+table {
+    margin: 50px auto;
+    background-color: #222;
+    width: 295px;
+    max-width: 295px;
+    height: 325px;
+    text-align: center;
+    border-radius: 4px;
+    padding-right: 10px;
+}
+
+input {
+    outline: 0;
+    position: relative;
+    left: 5px;
+    top: 5px;
+    border: 0;
+    color: #495069;
+    background-color: #fff;
+    border-radius: 4px;
+    width: 60px;
+    height: 50px;
+    float: left;
+    margin: 5px;
+    font-size: 20px;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+
+input:hover {
+    border: 0 solid #000;
+    margin: 5px;
+    box-shadow: 0 4px #b0d2cf;
+}
+
+#display {
+    width: 350px;
+    max-width: 355px;
+    font-size: 26px;
+    text-align: right;
+    background-color: #bcbd95;
+    float: left;
+    height: 80px;
+    border: 2px solid black;
+}
+
+#display:hover {
+    box-shadow: 0 4px rgba(0,0,0,0.2);
+}
+
+.operator {
+    background-color: #cee9ea;
+    position: relative;
+}
+
+.operator:hover {
+    background-color: #cee9ea;
+    box-shadow: 0 4px #b0d2cf;
+}
+
+.clear {
+    background-color: #ff9fa8;
+}
+  
+.clear:hover {
+    box-shadow: 0 4px #CC7F86;
+}
+
+.function {
+    background-color: darkgray;
+}
+
+.function:hover { 
+    box-shadow: 0 4px rgb(194, 193, 193);
+}
+
+#zero {
+    width: 135px;
+}
+
+.double {
+    height: 120px;
+}
+
+
+/* Styling  Flex Calculator */
+.container {
+    margin: 50px auto;
+    background-color: #222;
+    width: 300px;
+    max-width: 305px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.display {
+    width: 285px;
+    max-width: 290px;
+    font-size: 26px;
+    text-align: right;
+    background-color: #bcbd95;
+    float: left;
+    height: 80px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-left: 7px;
+}
+
+.display:hover {
+    box-shadow: 0 4px rgba(0,0,0,0.2);
+}
+
+.section {
+    display: flex;
+    gap: 5px;
+}
+
+button {
+    outline: 0;
+    position: relative;
+    left: 5px;
+    top: 5px;
+    border: 0;
+    color: #495069;
+    background-color: #fff;
+    border-radius: 4px;
+    width: 60px;
+    height: 50px;
+    float: left;
+    margin: 5px;
+    font-size: 20px;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+
+button:hover {
+    border: 0 solid #000;
+    margin: 5px;
+    box-shadow: 0 4px #b0d2cf;
+}
+
+.btn-operator {
+    background-color: #cee9ea;
+    position: relative;
+}
+
+.btn-operator:hover {
+    background-color: #cee9ea;
+    box-shadow: 0 4px #b0d2cf;
+}
+
+.btn-clear {
+    background-color: #ff9fa8;
+}
+  
+.btn-clear:hover {
+    margin-bottom: 15px;
+    box-shadow: 0 4px #CC7F86;
+}
+
+.btn-function {
+    background-color: darkgray;
+}
+
+.btn-function:hover { 
+    box-shadow: 0 4px rgb(194, 193, 193);
+}
+
+
+/* Styling Footer Section */
+footer {
+    background-color: #000019;
+    width: 100%;
+    text-align: center;
+    padding: 10px 10px 20px 10px;
+    position: relative;
+    box-sizing: border-box;
+    color: white;
+}
+
+.icon {
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.icon:hover {
+    border: 1px solid #7925b5;
+}
+
+i {
+    color: white;
+}
+
+i:hover {
+    color: #7925b5;
+}

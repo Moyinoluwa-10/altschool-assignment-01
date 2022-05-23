@@ -1,0 +1,181 @@
+/* Styling Page */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #e6e6ff;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+/* Styling Navigation Section */
+nav {
+    background-color: #000019;
+    width: 100%;
+    position: relative;
+    height: 50px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 10px 5px 10px;
+    position: relative;
+    float: right;
+}
+
+nav a.active {
+    color: blue;
+    border-bottom: 2px solid blue;
+    padding-bottom: 3px;
+}
+
+nav a:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: blue;
+    transform: scaleX(0);
+    transition: transform 0.7s ease;
+}
+
+nav a:hover:before {
+    transform: scaleX(1);
+}
+
+/* Styling Form Section */
+#create { 
+    text-align: center;
+    font-size: 23px;
+    color: #7925b5;
+    margin-top: -40px;
+    text-transform: uppercase;
+}
+
+form {
+    background-color: #8080ff;
+    margin: 100px auto;
+    width: 380px;
+    padding: 50px 50px;
+}
+
+.form-control {
+    align-items: center;
+    padding: 20px 0px;
+}
+
+label {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+input {
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 5px;
+    padding: 5px 20px;
+    width: 40%;
+    outline: none;
+    float: right;
+}
+
+input[placeholder] {
+    font-size: 13px;
+}
+
+input:hover {
+    background-color: #e6e6ff;
+}
+
+input:focus {
+    background-color: #e6e6ff;
+    border: 1px solid #7925b5;
+}
+
+select {
+    float: right;
+    width: 50.4%;
+    padding: 5px 20px;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 5px;
+    outline: none;
+    font-size: 13px;
+}
+
+/* Styling Submit Button */
+#btn {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #7925b5;
+    color: white;
+    font-size: 15px;
+    border-style: none;
+    margin: 20px 0;
+    width: 200px;
+}
+
+button:hover {
+    color: #7925b5;
+    background-color: white;
+    border: 1px solid #7925b5;
+}
+
+/* Styling Others */
+p {
+    text-align: center;
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+
+p a {
+    margin-left: 10px;
+    color: lightgray;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+    color: #000066;
+}
+
+/* Styling Footer Section */
+footer {
+    background-color: #000019;
+    width: 100%;
+    text-align: center;
+    padding: 10px 10px 20px 10px;
+    position: relative;
+    box-sizing: border-box;
+    color: white;
+}
+
+.icon {
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.icon:hover {
+    border: 1px solid #7925b5;
+}
+
+i {
+    color: white;
+}
+
+i:hover {
+    color: #7925b5;
+}
